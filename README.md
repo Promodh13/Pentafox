@@ -1,2 +1,1 @@
-# Pentafox
-Assignment Repository
+This is an assignment repository created to be evaluated by the incharge assigned to me during the course of internship in platform engineeering in Pentafox company...
