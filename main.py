@@ -23,7 +23,7 @@ def connect_to_mysql():
         print(f"Error: {err}")
         return None
 
-
+#Table creation
 def create_table(connection, table_name, columns):
     try:
         cursor = connection.cursor()
@@ -37,7 +37,7 @@ def create_table(connection, table_name, columns):
     except mysql.connector.Error as err:
         print(f"Error: {err}")
 
-
+#Insertion of data
 def insert_data(connection, table_name, data):
     try:
         cursor = connection.cursor()
@@ -51,7 +51,7 @@ def insert_data(connection, table_name, data):
     except mysql.connector.Error as err:
         print(f"Error: {err}")
 
-
+#Bulk insertion of data
 def bulk_insert(connection, table_name, data):
     try:
         cursor = connection.cursor()
@@ -65,7 +65,7 @@ def bulk_insert(connection, table_name, data):
     except mysql.connector.Error as err:
         print(f"Error: {err}")
 
-
+#Update data
 def update_data(connection, table_name, set_values, condition):
     try:
         cursor = connection.cursor()
@@ -79,7 +79,7 @@ def update_data(connection, table_name, set_values, condition):
     except mysql.connector.Error as err:
         print(f"Error: {err}")
 
-
+#Deletion of data
 def delete_data(connection, table_name, condition):
     try:
         cursor = connection.cursor()
